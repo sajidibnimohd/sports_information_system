@@ -1,0 +1,65 @@
+/* Use the Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+/* Set the font family for the entire page */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Center the table on the page */
+table {
+    margin: 0 auto;
+}
+
+/* Style the table headers */
+th {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 10px;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Style the table rows */
+tr {
+    font-size: 14px;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Style the cells */
+td {
+    padding: 10px;
+}
+
+/* Style the "Date" cells */
+td[id$="-date"] {
+    font-weight: bold;
+}
+
+/* Style the "Available/Unavailable" cells */
+td[id$="-available"] {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+td[id$="-available"][data-status="available"] {
+    background-color: #77dd77;
+    /* Light green */
+}
+
+td[id$="-available"][data-status="unavailable"] {
+    background-color: #ff6961;
+    /* Light red */
+}
+
+/* Hover effect on cells */
+td:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+}

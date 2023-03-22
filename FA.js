@@ -65,4 +65,4 @@ function updateAvailability(dayOfWeek) {
   tableBody.children[dayOfWeek].children[2].textContent = availability[dayOfWeek];
 }
 
-updateAvailability(1); // Sport field is available on Monday.
+updateAvailability(0); // Sport field is available on Monday.
